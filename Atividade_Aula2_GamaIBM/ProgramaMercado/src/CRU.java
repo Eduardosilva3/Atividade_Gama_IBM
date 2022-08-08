@@ -5,11 +5,14 @@ public class CRU {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		
+		//Variavel parra escolha do menu
 		int escolha = 0;
-		
+		 
+		//Iniciaalizando ArrayList
 		ArrayList<String> cadastroFrutas = new ArrayList<String>();
 		System.out.println("--- Seja Bem Vindo ao sistema de Gerenciamento de Frutas.");
+		
+		//Laço de repetição do menu
 		do {
 			System.out.println("Selecione a opção Desejada: \n");
 			System.out.println("1 - Cadastrar Nova Fruta.");
@@ -19,6 +22,7 @@ public class CRU {
 			
 			escolha = scan.nextInt();
 			
+			//navevgaação das escolhas atraves do caase
 			switch (escolha) {
 			case 1:
 				String opcao ="s";
